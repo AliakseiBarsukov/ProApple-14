@@ -24,6 +24,7 @@ button {
     padding: 0;
     cursor: pointer;
     border: none;
+    background-color: inherit;
 }
 
 a {
@@ -42,7 +43,19 @@ h1, h2, h3, p {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1324px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 34px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 77px;
+    }
 }

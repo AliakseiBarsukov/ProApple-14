@@ -1,0 +1,22 @@
+.country {
+    &__btn {
+        position: relative;
+        padding-right: 13px;
+    }
+
+    &__btn::after {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 9px;
+        height: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../../img/arrow-down.svg) no-repeat center;
+    }
+
+    &__list {
+        display: none;
+    }
+}

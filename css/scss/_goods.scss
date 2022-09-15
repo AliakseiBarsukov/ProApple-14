@@ -1,0 +1,38 @@
+.goods {
+    padding: 40px 0;
+
+    &__tagline {
+        margin-bottom: 4px;
+        text-align: center;
+    }
+    &__title {
+        font-weight: 600;
+        font-size: 29px;
+        margin-bottom: 24px;
+    }
+    &__helper {
+        position: relative;
+    }
+    &__arrow {
+        position: absolute;
+        top: 115px;
+        
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-image: url(../../img/arrow-slider.svg);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+
+        &_prev {
+            left: -5px;
+        }
+        &_next {
+            right: -5px;
+            transform: rotate(180deg);
+
+        }
+    }
+
+}
