@@ -41,3 +41,47 @@
     }
     
 }
+
+@media (min-width: 768px) {
+    .product {
+        width: 340px;
+
+        &__image-wrapper {
+            height: 340px;
+            margin-bottom: 20px;
+        }
+
+        &__image {
+            width: 235px;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .product {
+        width: 370px;
+
+        &__title {
+            font-size: 24px;
+        }
+
+        &__price {
+            font-size: 24px;
+        }
+
+        &__more {
+            font-size: 16px;
+        }
+
+        &__image-wrapper {
+            height: 370px;
+        }
+
+        &__image {
+            width: 255px;
+        }
+
+        &__info {
+            margin-bottom: 24px;
+        }
+    }
+}
