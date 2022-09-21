@@ -1,5 +1,6 @@
 html {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 *,
@@ -46,6 +47,10 @@ h1, h2, h3, p {
     max-width: 1324px;
     margin: 0 auto;
     padding: 0 15px;
+}
+
+.active {
+    color: #2238FF;
 }
 
 @media (min-width: 768px) {

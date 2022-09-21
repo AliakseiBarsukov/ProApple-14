@@ -32,6 +32,13 @@
         border-radius: 32px;
         font-size: 14px;
         line-height: 100%;
+        transition: color .3s ease-in-out;
+        transition: background .3s ease-in-out;
+    }
+
+    &__btn:hover {
+        background: #2238FF;
+        color: #fff;
     }
 }
 
