@@ -1,0 +1,79 @@
+.country {
+    position: relative;
+
+    &__btn {
+        position: relative;
+        padding-right: 13px;
+    }
+
+    &__btn::after {
+        content: '';
+        position: absolute;
+        display: block;
+        right: 0;
+        width: 9px;
+        height: 6px;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url("./../img/arrow-down.svg") no-repeat center;
+    }
+
+    &__wrapper {
+        display: none;
+        position: absolute;
+        width: 184px;
+        right: 0;
+        top: 40px;
+        padding: 16px 8px 16px 16px;
+        background: #fff;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 6px;
+
+        &_open {
+            display: block;
+        }
+    }
+    &__list {
+        max-height: 102px;
+    }
+    &__item {
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__choise {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    &__track {
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        width: 4px;
+    }
+
+    &__scrollbar {
+        background-color: #ECECEC;
+        border-radius: 2px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .country {
+        &__list {
+            max-height: 120px;
+        }
+
+        &__choise {
+            font-size: 16px;
+        }
+    }
+}
+
