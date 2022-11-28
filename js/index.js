@@ -129,18 +129,9 @@ countryWrapper.addEventListener('click', ({target}) => {
     if (target.classList.contains('country__choise')) {
         countryBtn.textContent = target.dataset.currency;
         countryWrapper.classList.remove('country__wrapper_open');
-        showPrice(target.dataset.currency)
-
-        // countryChoise.forEach((item, i) => {
-        //     item.addEventListener('click', () => {
-        //         if (countryChoise[i].classList.contains('active')) {
-        //             countryChoise[i].classList.remove('active');
-        //         } else {
-        //             countryChoise[i].classList.add('active');
-        //         }
-        //     });
-        // })
+        showPrice(target.dataset.currency);
     }
+
 });
 
 
@@ -163,8 +154,8 @@ const timer = dedline => {
         const dateNow = Date.now();
         const timeRemaining = dateStop - dateNow;
 
-        const minutes = Math.floor(timeRemaining / 60 % 60);
-        const hours = Math.floor(timeRemaining / 60 /60 % 24);
+        const minutes = Math.floor(timeRemaining / 1000 / 60 % 60);
+        const hours = Math.floor(timeRemaining / 1000 / 60 /60 % 24);
         const days = Math.floor(timeRemaining / 1000 / 60 / 60 / 24);
     
         return { timeRemaining, minutes, hours, days };
