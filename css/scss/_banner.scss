@@ -1,6 +1,6 @@
 .banner {
     padding: 24px 0 206px;
-    background: #F5F5F7 url('../../img/bg-mob.jpeg') bottom/320px no-repeat;
+    background: #F5F5F7 url('./../../img/bg-desc.jpeg') bottom/320px no-repeat;
     margin-bottom: 40px;
     text-align: center;
 
@@ -45,7 +45,7 @@
 @media (min-width:768px) {
     .banner {
         padding: 60px 0 90px;
-        background-image: url('../../img/bg-tab.jpeg');
+        background-image: url('./../../img/bg-tab.jpeg');
         background-position: center;
         background-size: contain;
         margin-bottom: 70px;
@@ -59,7 +59,7 @@
 @media (min-width: 1024px) {
     .banner {
         padding: 120px 0 160px;
-        background-image: url('../../img/bg-laptop.jpeg');
+        background-image: url('./../../img/bg-laptop.jpeg');
 
         &__content {
             max-width: 510px;
@@ -85,6 +85,6 @@
 
 @media (min-width: 1440px) {
     .banner {
-        background-image: url('../../img/bg-desc.jpeg');
+        background-image: url('./../../img/bg-desc.jpeg');
     }
 }
