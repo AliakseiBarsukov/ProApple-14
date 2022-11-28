@@ -137,6 +137,9 @@ h1, h2, h3, p {
     gap: 84px;
   }
 }
+.country {
+  position: relative;
+}
 .country__btn {
   position: relative;
   padding-right: 13px;
@@ -152,10 +155,56 @@ h1, h2, h3, p {
   transform: translateY(-50%);
   background: url(../../img/arrow-down.svg) no-repeat center;
 }
-.country__list {
+.country__wrapper {
   display: none;
+  position: absolute;
+  width: 184px;
+  right: 0;
+  top: 40px;
+  padding: 16px 8px 16px 16px;
+  background: #fff;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+.country__wrapper_open {
+  display: block;
+}
+.country__list {
+  max-height: 102px;
+}
+.country__item {
+  margin-bottom: 10px;
+}
+.country__item:last-child {
+  margin-bottom: 0;
+}
+.country__choise {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+}
+.country__track {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+  width: 4px;
+}
+.country__scrollbar {
+  background-color: #ECECEC;
+  border-radius: 2px;
 }
 
+@media (min-width: 1024px) {
+  .country__list {
+    max-height: 120px;
+  }
+  .country__choise {
+    font-size: 16px;
+  }
+}
 .banner {
   padding: 24px 0 206px;
   background: #F5F5F7 url("../../img/bg-mob.jpeg") bottom/320px no-repeat;
@@ -578,6 +627,7 @@ h1, h2, h3, p {
   z-index: 99;
   padding: 15px;
   overflow-y: auto;
+  background-color: rgba(236, 236, 236, 0.566);
 }
 .modal__wrapper {
   margin: auto;
@@ -644,6 +694,10 @@ h1, h2, h3, p {
   color: #fff;
   height: 46px;
   width: 225px;
+  transition: background 0.2s ease-in-out;
+}
+.form__submit:hover {
+  background: #8793FF;
 }
 
 @media (min-width: 1024px) {

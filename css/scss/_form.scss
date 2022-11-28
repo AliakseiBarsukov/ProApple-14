@@ -41,6 +41,11 @@
         color: #fff;
         height: 46px;
         width: 225px;
+        transition: background .2s ease-in-out;
+    }
+
+    &__submit:hover {
+        background: #8793FF;
     }
 }
 
